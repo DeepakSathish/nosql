@@ -1,0 +1,77 @@
+127.0.0.1:6379> SADD BIKE_DETAILS : name deepak anbu krish
+(integer) 2
+127.0.0.1:6379> SADD BIKE_DETAILS : gender male female male
+(integer) 0
+127.0.0.1:6379> SADD BIKE_DETAILS : age 21 15 26
+(integer) 2
+127.0.0.1:6379> SADD BIKE_DETAILS : starting point coimbatore chennai coimbatore
+(integer) 4
+127.0.0.1:6379> SADD BIKE_DETAILS : ending point delhi mumbai delhi
+(integer) 3
+127.0.0.1:6379> SADD BIKE_DETAILS : date 10/02/2023 15/02/2023 20/02/2023
+(integer) 4
+127.0.0.1:6379> SADD BIKE_DETAILS : seat no 123F 564G 991C
+(integer) 5
+127.0.0.1:6379> SADD BUS_DETAILS : class first second third 
+(integer) 3
+127.0.0.1:6379> SADD BUS_DETAILS : facilities A/C NonA/C A/C
+(integer) 3
+127.0.0.1:6379> SADD BUS_DETAILS : name kerala express
+(integer) 4
+127.0.0.1:6379> SADD BUS_DETAILS : number #12625
+(integer) 2
+127.0.0.1:6379> SADD BUS_DETAILS : arrival time 3pm
+(integer) 3
+127.0.0.1:6379> SADD BUS_DETAILS : departure time 8am
+(integer) 3
+127.0.0.1:6379> SMEMBERS BIKR_DETAILS
+ 1) "21"
+ 2) "starting"
+ 3) "991C"
+ 4) "15/02/2023"
+ 5) "gender"
+ 6) "45"
+ 7) "anbu"
+ 8) "delhi"
+ 9) "20"
+10) "seat"
+11) "krish"
+12) ":"
+13) "coimbatore"
+14) "ruthu"
+15) "mumbai"
+16) "15"
+17) "ending"
+18) "female"
+19) "chennai"
+20) "age"
+21) "date"
+22) "no"
+23) "564G"
+24) "class"
+25) "male"
+26) "point"
+27) "ravi"
+28) "name"
+29) "10/02/2023"
+30) "123F"
+31) "deepak"
+32) "20/02/2023"
+33) "26"
+34) "A/C"
+35) "second"
+36) "facilities"
+37) "third"
+38) "NonA/C"
+127.0.0.1:6379> SMEMBERS BUS_DETAILS
+ 1) "name"
+ 2) "number"
+ 3) "#12625"
+ 4) "arrival"
+ 5) "8am"
+ 6) "time"
+ 7) "express"
+ 8) "pm"
+ 9) "3"
+10) "departure"
+11) "kerala"
